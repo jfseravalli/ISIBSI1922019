@@ -1,0 +1,30 @@
+
+
+<html>
+ <head>
+  <script>
+
+     
+    String.prototype.reverse=function(){return this.split("").reverse().join("");}
+
+   function Palindromo(palabra) {
+   
+    
+    var palabra_inversa = palabra.reverse();
+    if (palabra== palabra_inversa) { 
+     alert("La palabra '"+palabra+"' SI es Palíndromo");
+     return(true);
+    }
+    else {
+     alert("La palabra '"+palabra+"' NO es Palindromo: '");
+     return(false); 
+    } 
+   } 
+  </script>
+ </head>
+ 
+ <body>
+  <input type="text" placeholder="Palabra a Evaluar." id="entrada" />
+  <input type="button" onclick="Palindromo(document.getElementById('entrada').value)" value="Evaluar"/>
+ </body>
+</html>
