@@ -1,0 +1,17 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "description": "UAM",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "ISIBSI1922019",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
