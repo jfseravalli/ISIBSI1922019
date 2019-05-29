@@ -1,0 +1,41 @@
+<html>
+
+<head> 
+<tittle><b>Ejercicio8</b></tittle>
+
+<h1>Evaluación de Cadena de caracteres</h1>
+
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+function Evaluar(cadena) {
+
+cadena= String(cadena).trim();
+  const regxs = {
+    "lower": /^[a-z0-9 ]+$/,
+    "upper": /^[A-Z0-9 ]+$/,
+    "upperLower": /^[A-Za-z0-9 ]+$/
+  }
+ 
+  if (regxs.lower.test(cadena)) return 'Solo Minúsculas';
+  if (regxs.upper.test(cadena)) return 'Solo Mayúsculas';
+  if (regxs.upperLower.test(cadena)) return 'Mayúsculas y Minúsculas';
+  return -1;
+}
+
+var cadena= prompt("Ingrese cadena a evaluar");
+var resultado = Evaluar(cadena)
+
+alert("La cadena ingresada contine "+resultado);
+
+</script>
+
+
+
+</body>
+
+</html>
