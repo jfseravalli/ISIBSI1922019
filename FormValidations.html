@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Formulario</title>
+</head>
+<form>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+
+
+ <td><tr>
+NombreUsuario: <input type="text" name="nombre" pattern="[A-Za-z]" title="El formato es Nombre.Apellido">
+</td> </tr>
+<tr> <td>
+E-mail: <input type="email" name="emailaddress">
+</td> </tr> <tr> <td>
+Clave: <input type="password" name="pswd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos Un numero, Una mayúscula, Una minúscula, y debe ser al menos de 8 caracteres">
+</td> <td>
+ <tr> <td>
+ 
+ Fecha de Nacimiento: <input type="date" name="bday">
+
+</td> <td>
+
+
+Validar: <input type="submit" name "query">
+</td> </tr>
+</table>
+</form>
